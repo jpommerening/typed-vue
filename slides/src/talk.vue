@@ -5,7 +5,6 @@
 <script>
 import bespoke from "bespoke";
 import backdrop from "bespoke-backdrop";
-import bullets from "bespoke-bullets";
 import classes from "bespoke-classes";
 import fullscreen from "bespoke-fullscreen";
 import hash from "bespoke-hash";
@@ -15,17 +14,20 @@ import touch from "bespoke-touch";
 
 export default {
   mounted() {
-    console.log("mounted");
-    bespoke.from({ parent: this.$el }, [
-      backdrop(),
-      bullets("[data-bespoke-bullet]"),
-      classes(),
-      fullscreen(),
-      hash(),
-      keys("vertical"),
-      notes({ visible: false }),
-      touch()
-    ]);
+    bespoke.from(
+      { parent: this.$el, children: this.$slots.default.map(e => e.elm) },
+      [
+        backdrop(),
+        classes(),
+        fullscreen(),
+        hash(),
+        keys("vertical"),
+        notes({ visible: true }),
+        touch()
+      ]
+    );
   }
 };
 </script>
+
+<style lang="scss" src="./styles/main.scss"></style>

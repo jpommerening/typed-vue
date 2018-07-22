@@ -1,0 +1,221 @@
+@import "~normalize.css";
+@import "vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-size-adjust: auto;
+}
+
+.bespoke-parent {
+  font-size: 1.5em;
+  background: $background;
+  color: $foreground;
+  font-family: $sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 1s ease;
+  background-position: 50% 50%;
+}
+
+.bespoke-scale-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  .bespoke-active {
+    pointer-events: auto;
+  }
+}
+
+.bespoke-slide {
+  $width: 1024px;
+  $height: 576px;
+  $width: 100vw;
+  $height: 100vh;
+
+  transition: opacity 0.3s ease;
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -($width / 2);
+  margin-top: -($height / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.bespoke-active {
+  transition-delay: 0.2s;
+}
+
+.bespoke-inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bespoke-backdrop {
+  transition: opacity 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+
+  &-active {
+    opacity: 1;
+  }
+}
+
+.bespoke-progress-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.3vw;
+  z-index: 1;
+}
+
+.bespoke-progress-bar {
+  background: $foreground;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: width 1s ease;
+}
+
+.bespoke-bullet {
+  transition: opacity 0.3s ease;
+}
+
+.bespoke-bullet-inactive {
+  opacity: 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h1 strong {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0.4em 0;
+}
+
+h1,
+h2,
+h3,
+p,
+dd,
+li,
+pre {
+  font-weight: 200;
+}
+
+h1 {
+  font-family: $serif;
+  font-style: italic;
+}
+
+h1 {
+  margin: 0.21em 0;
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1em;
+  margin: 0.23em 0;
+}
+
+h3 {
+  font-style: normal;
+  font-size: 0.6em;
+  margin: 1.1em 0;
+}
+
+li {
+  margin: 0.6em 0;
+  font-style: normal;
+  transform: translateX(-6px);
+}
+
+ul li {
+  list-style: none;
+}
+
+hr {
+  background-color: $foreground;
+  width: 30%;
+  height: 1px;
+  border: 0;
+  margin-top: 0.3em;
+}
+
+pre {
+  margin: 1.5em 0em;
+  font-size: 0.7em;
+  background: none !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+
+  code {
+    white-space: pre;
+    overflow-wrap: pre;
+    display: block;
+
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+code {
+  font-family: $monospace !important;
+  font-style: normal;
+  font-weight: 200 !important;
+  text-align: left;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $vue-light-green;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.emphatic {
+  background: $orange;
+}

@@ -43,7 +43,6 @@ module.exports = {
         test: /\.s?css$/,
         use: [
           "style-loader",
-          "file-loader?name=assets/[sha1:hash:hex:6]-[name].css",
           "css-loader"
         ]
       },
