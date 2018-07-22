@@ -1,0 +1,37 @@
+{
+  "name": "typed-vue-slides",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server -d"
+  },
+  "dependencies": {
+    "bespoke": "^1.1.0",
+    "bespoke-backdrop": "^1.0.0",
+    "bespoke-bullets": "^1.1.0",
+    "bespoke-classes": "^1.0.0",
+    "bespoke-fullscreen": "^1.0.0",
+    "bespoke-hash": "^1.1.0",
+    "bespoke-keys": "^1.1.0",
+    "bespoke-notes": "^2.1.2",
+    "bespoke-touch": "^1.0.0",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "prettier": "^1.13.7",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^15.2.6",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
