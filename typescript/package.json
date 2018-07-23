@@ -1,5 +1,5 @@
 {
-  "name": "typed-vue",
+  "name": "typed-vue-typescript",
   "version": "0.1.0",
   "description": "A short talk and interactive demo of static typechecking a Vue.js app",
   "repository": "https://github.com/jpommerening/typed-vue.git",
