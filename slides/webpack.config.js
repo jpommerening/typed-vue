@@ -15,41 +15,33 @@ module.exports = {
   module: {
     rules: [
       {
-        // load javascript with babel
         test: /\.js$/,
         use: "babel-loader",
         include: resolve("src")
       },
       {
-        // load vue components with vue-loader
         test: /\.vue$/,
         use: "vue-loader",
         include: resolve("src")
       },
       {
-        // load images and fonts with the file-loader
-        // (out-of-bundle in dist/assets/)
         test: /\.(gif|jpe?g|png|ttf|woff2?|svg|eot|otf)(\?.*)?$/,
-        use: "file-loader"
+        use: "file-loader?name=[name]-[sha1:hash:hex:6].[ext]"
       },
       {
-        // ... after optimizing graphics with the image-loader
         test: /\.(gif|jpe?g|png|svg)$/,
         use: "img-loader?progressive=true"
       },
       {
-        // resolve CSS url()s and dependencies with the css-loader
-        // and extract result for file-loader, and inject with style-loader
         test: /\.s?css$/,
         use: [
           "style-loader",
-          "css-loader"
+          "css-loader?sourceMap"
         ]
       },
       {
-        // load scss files by precompiling with the sass-loader
         test: /\.scss$/,
-        use: "sass-loader",
+        use: "sass-loader?sourceMap",
         include: resolve("src")
       }
     ]
