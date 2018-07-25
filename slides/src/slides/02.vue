@@ -4,14 +4,14 @@
       <h2>Full disclosure</h2>
     </header>
 
-    <ul>
-      <li data-bespoke-bullet>
+    <ul class="bullets">
+      <li>
         <i class="fa fa-github"/> <a href="https://github.com/jpommerening" title="me on Github">jpommerening</a>
       </li>
-      <li data-bespoke-bullet>
+      <li>
         <i class="fa fa-twitter"/> <a href="https://twitter.com/svckr" title="me on Twitter">svckr</a>
       </li>
-      <li data-bespoke-bullet>
+      <li>
         <svg class="aixigo" width="100" height="100" viewBox="0 0 100 100">
           <path d="M 50 0 L 75 25 L 52.5 47.5 L 47.5 42.5 L 20 70 L 0 50 Z"/>
           <path d="M 50 100 L 100 50 L 80 30 L 52.5 57.5 L 47.5 52.5 L 25 75 Z"/>
@@ -23,7 +23,7 @@
   </section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../styles/vars.scss";
 
 .aixigo {

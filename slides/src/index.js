@@ -6,6 +6,8 @@ import Slide03 from "./slides/03";
 import Slide04 from "./slides/04";
 import Dart from "./slides/dart";
 import FlowTypeScript from "./slides/flowtypescript";
+import Review from "./slides/review";
+import MoreTypes from "./slides/moretypes";
 import Links from "./slides/links";
 
 const Slides = [
@@ -15,6 +17,8 @@ const Slides = [
   Slide04,
   Dart,
   FlowTypeScript,
+  Review,
+  MoreTypes,
   Links
 ];
 

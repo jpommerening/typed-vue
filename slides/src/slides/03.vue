@@ -23,14 +23,14 @@
 </template>
 
 <script>
-import CodeSample from "../code-sample";
+import CodeSample from "../components/code-sample";
 
 export default {
   components: { CodeSample }
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../styles/vars.scss";
 
 .triangle {

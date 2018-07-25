@@ -5,6 +5,7 @@
 <script>
 import bespoke from "bespoke";
 import backdrop from "bespoke-backdrop";
+import bullets from "bespoke-bullets";
 import classes from "bespoke-classes";
 import fullscreen from "bespoke-fullscreen";
 import hash from "bespoke-hash";
@@ -18,6 +19,7 @@ export default {
       { parent: this.$el, children: this.$slots.default.map(e => e.elm) },
       [
         backdrop(),
+        bullets(".bullets, .bullets > li, .bullet"),
         classes(),
         fullscreen(),
         hash(),

@@ -1,8 +1,8 @@
 <template>
   <section>
     <header>
-      <h2>Typechecking Vue</h2>
-      <p>Ein Selbstversuch</p>
+      <h2 class="vue">Static Type Checking mit Vue.js</h2>
+      <p class="sub">Ein Selbstversuch</p>
     </header>
 
     <div class="triangle">
@@ -14,8 +14,18 @@
   </section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "../styles/vars.scss";
+
+.vue {
+  font-family: "Dosis";
+  font-size: 1.5em;
+  color: $vue-dark-blue;
+}
+
+.sub {
+  color: $vue-light-green;
+}
 
 .triangle {
   min-width: 45vw;
@@ -26,6 +36,12 @@
   top: 0;
   z-index: -1;
   padding: 0;
+  transform: translate(0, 0);
+  transition: transform 0.4s ease-in-out;
+
+  :global(.bespoke-inactive) & {
+    transform: translate(0, 26%);
+  }
 
   svg {
     width: 100%;

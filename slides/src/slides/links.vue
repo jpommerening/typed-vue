@@ -43,6 +43,11 @@ export default {
           href: "https://www.youtube.com/watch?v=05tNXJ-Kric&t=563s",
           title: "Pine Wu - var vetur = vscode + vue;",
           classes: ["fa", "fa-youtube"]
+        },
+        {
+          href: "https://github.com/jpommerening/typed-vue",
+          title: "jpommerening/typed-vue",
+          classes: ["fa", "fa-github"]
         }
       ]
     };
@@ -50,5 +55,5 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 </style>

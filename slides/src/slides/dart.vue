@@ -1,10 +1,16 @@
 <template>
   <section>
     <header>
-      <h2>dart?</h2>
+      <h2 class="bullet">Is it … <span class="bullet"><a class="dart" href="https://www.dartlang.org" title="Dart">Dart</a>?</span></h2>
     </header>
 
-    <img class="dart" src="../assets/dart.svg"/>
+    <p>
+      <ul class="bullets">
+        <li>(Dart: Google, 2011)</li>
+      </ul>
+    </p>
+
+    <img class="logo" src="../assets/dart.svg"/>
   </section>
 </template>
 
@@ -21,8 +27,12 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.dart {
+<style lang="scss" scoped>
+a.dart:hover {
+  color: #0175c2;
+}
+
+.logo {
   position: absolute;
   right: 0;
   bottom: 0;
