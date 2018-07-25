@@ -12,9 +12,9 @@
         <i class="fa fa-twitter"/> <a href="https://twitter.com/svckr" title="me on Twitter">svckr</a>
       </li>
       <li>
-        <svg class="aixigo" width="100" height="100" viewBox="0 0 100 100">
-          <path d="M 50 0 L 75 25 L 52.5 47.5 L 47.5 42.5 L 20 70 L 0 50 Z"/>
-          <path d="M 50 100 L 100 50 L 80 30 L 52.5 57.5 L 47.5 52.5 L 25 75 Z"/>
+        <svg class="aixigo" viewBox="0 0 40 40">
+          <path d="M 20 0 L 30 10 21 19 19 17 8 28 0 20 Z"/>
+          <path d="M 20 40 L 40 20 32 12 21 23 19 21 10 30 Z"/>
         </svg>
         <a href="http://aixigo.com">aixigo</a>
       </li>

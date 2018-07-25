@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Talk from "./talk";
-import Slide01 from "./slides/01";
-import Slide02 from "./slides/02";
+import Title from "./slides/title";
+import Intro from "./slides/intro";
 import Slide03 from "./slides/03";
 import Slide04 from "./slides/04";
 import Dart from "./slides/dart";
@@ -11,8 +11,8 @@ import MoreTypes from "./slides/moretypes";
 import Links from "./slides/links";
 
 const Slides = [
-  Slide01,
-  Slide02,
+  Title,
+  Intro,
   Slide03,
   Slide04,
   Dart,

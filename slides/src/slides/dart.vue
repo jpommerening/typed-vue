@@ -14,22 +14,15 @@
   </section>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    value: Number
-  },
-  computed: {
-    message() {
-      return this.value * 2;
-    }
-  }
-};
-</script>
-
 <style lang="scss" scoped>
 a.dart:hover {
   color: #0175c2;
+}
+
+.is-this {
+  background-image: url("../assets/is-this.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .logo {
