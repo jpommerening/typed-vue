@@ -5,6 +5,7 @@
   "rules": {
     "indent": [true],
     "interface-name": [false],
+    "interface-over-type-literal": false,
     "arrow-parens": false,
     "object-literal-sort-keys": false
   },
