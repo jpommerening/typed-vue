@@ -25,7 +25,7 @@ export default {
         hash(),
         keys("vertical"),
         notes({ visible: true }),
-        touch()
+        touch("vertical")
       ]
     );
   }
