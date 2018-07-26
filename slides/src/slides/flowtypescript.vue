@@ -9,6 +9,9 @@
       <p>
         <ul class="bullets">
           <li><a href="https://blogs.msdn.microsoft.com/typescript/2012/11/15/announcing-typescript-0-8-1/" title="Introducing Flow-Typed">Microsoft, 2012</a></li>
+          <li><strong>Sprache, die zu JS kompiliert</strong></li>
+          <li>ES2015 + Proposals (z.B. Decorators) + Types</li>
+          <li><code>tsc</code> (TypeScript compiler)</li>
         </ul>
       </p>
     </section>
@@ -21,6 +24,10 @@
       <p>
         <ul class="bullets">
           <li><a href="https://flow.org/blog/2016/10/13/Flow-Typed/" title="Introducing Flow-Typed">Facebook, 2016</a></li>
+          <li><strong>Typechecker für JS</strong></li>
+          <li>ES-whatever + Types</li>
+          <li><code>flow</code> (typechecker)</li>
+          <li><code>babel-plugin-tranform-flow-strip-types</code></li>
         </ul>
       </p>
     </section>

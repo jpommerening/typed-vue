@@ -1,7 +1,7 @@
 <template>
   <section>
     <header>
-      <h2 class="bullet">Is it … <span class="bullet"><a class="dart" href="https://www.dartlang.org" title="Dart">Dart</a>?</span></h2>
+      <h2 class="bullet">Is this … <span class="bullet"><a class="dart" href="https://www.dartlang.org" title="Dart">Dart</a>?</span></h2>
     </header>
 
     <p>
