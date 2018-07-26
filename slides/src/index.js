@@ -5,6 +5,7 @@ import Intro from "./slides/intro";
 import Goals from "./slides/goals";
 import Dart from "./slides/dart";
 import FlowTypeScript from "./slides/flowtypescript";
+import Demo from "./slides/demo";
 import Review from "./slides/review";
 import Recap from "./slides/recap";
 import MoreTypes from "./slides/moretypes";
@@ -16,6 +17,7 @@ const Slides = [
   Goals,
   Dart,
   FlowTypeScript,
+  Demo,
   Review,
   Recap,
   MoreTypes,

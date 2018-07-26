@@ -19,7 +19,7 @@ export default {
       { parent: this.$el, children: this.$slots.default.map(e => e.elm) },
       [
         backdrop(),
-        bullets(".bullets, .bullets > li, .bullet"),
+        bullets(".bullets > li, .bullet"),
         classes(),
         fullscreen(),
         hash(),

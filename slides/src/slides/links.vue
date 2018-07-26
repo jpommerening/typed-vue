@@ -29,6 +29,11 @@ export default {
           classes: ["fa", "fa-link"]
         },
         {
+          href: "https://basarat.gitbooks.io/typescript/",
+          title: "TypeScript Deep Dive",
+          classes: ["fa", "fa-link"]
+        },
+        {
           href: "https://github.com/Microsoft/TypeScript-Vue-Starter",
           title: "Microsoft/Typescript-Vue-Starter",
           classes: ["fa", "fa-github"]

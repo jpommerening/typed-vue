@@ -1,10 +1,8 @@
 <template>
   <section>
-    <header>
-      <h2>Full disclosure</h2>
-    </header>
 
     <ul class="bullets">
+      <li class="let-speaker"><code><span class="hljs-keyword">let</span> speaker = { name: <span class="hljs-string">&quot;Jonas Pommerening&quot;</span> };</code></li>
       <li>
         <i class="fa fa-github"/> <a href="https://github.com/jpommerening" title="me on Github">jpommerening</a>
       </li>
@@ -25,6 +23,10 @@
 
 <style lang="scss" scoped>
 @import "../styles/vars.scss";
+
+.let-speaker {
+  margin-bottom: 2em;
+}
 
 .aixigo {
   margin-bottom: -0.15em;

@@ -6,14 +6,7 @@
           <img class="logo" src="../assets/typescript.svg" title="typescript" alt="typescript"/>
         </a>
       </h2>
-      <p>
-        <ul class="bullets">
-          <li><a href="https://blogs.msdn.microsoft.com/typescript/2012/11/15/announcing-typescript-0-8-1/" title="Introducing Flow-Typed">Microsoft, 2012</a></li>
-          <li><strong>Sprache, die zu JS kompiliert</strong></li>
-          <li>ES2015 + Proposals (z.B. Decorators) + Types</li>
-          <li><code>tsc</code> (TypeScript compiler)</li>
-        </ul>
-      </p>
+      <p><a href="../typescript/">Demo! 🤓</a></p>
     </section>
     <section class="flow">
       <h2>
@@ -21,15 +14,7 @@
           <img class="logo" src="../assets/flow.svg" title="flow" alt="flow"/>
         </a>
       </h2>
-      <p>
-        <ul class="bullets">
-          <li><a href="https://flow.org/blog/2016/10/13/Flow-Typed/" title="Introducing Flow-Typed">Facebook, 2016</a></li>
-          <li><strong>Typechecker für JS</strong></li>
-          <li>ES-whatever + Types</li>
-          <li><code>flow</code> (typechecker)</li>
-          <li><code>babel-plugin-tranform-flow-strip-types</code></li>
-        </ul>
-      </p>
+      <p><a href="../flow/">Heute nicht 😌</a></p>
     </section>
   </n-up>
 </template>
